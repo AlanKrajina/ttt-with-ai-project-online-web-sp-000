@@ -5,7 +5,7 @@ require_relative '../config/environment'¸
 puts "Welcome to Tic Tac Toe!"
 
 def start
-  puts "How do you want to play? (0, 1 or 2)"
+  puts "How do you want to play? Select 0, 1 or 2)"
   input = gets.strip
   case input
     when "0"
