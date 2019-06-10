@@ -34,7 +34,7 @@ def restart
     when "n"
       puts "Goodbye!"
     else
-      loop_around
+      restart
   end
 end
 start
