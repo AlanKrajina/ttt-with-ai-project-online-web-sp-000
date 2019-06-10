@@ -15,17 +15,17 @@ def start
     when "1"
       Game.new(Player::Human.new("X"), Player::Computer.new("O")).play
       puts "Game over. Play again?"
-      loop_around
+      restart
     when "2"
       Game.new(Player::Human.new("X"), Player::Human.new("O")).play
       puts "Game over. Play again?"
-      loop_around
+      restart
     else
       puts "Wrong entry number."
       start
   end
 end
-def loop_around
+def restart
   puts "Please input y or n"
   answer = gets.strip
   case answer
