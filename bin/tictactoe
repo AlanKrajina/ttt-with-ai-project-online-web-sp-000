@@ -14,14 +14,14 @@ def start
       loop_around
     when "1"
       Game.new(Player::Human.new("X"), Player::Computer.new("O")).play
-      puts "That was fun! Would you like to play again?"
+      puts "Game over. Play again?"
       loop_around
     when "2"
       Game.new(Player::Human.new("X"), Player::Human.new("O")).play
-      puts "That was fun! Would you like to play again?"
+      puts "Game over. Play again?"
       loop_around
     else
-      puts "That is an invalid entry"
+      puts "Wrong entry number."
       start
   end
 end
