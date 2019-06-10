@@ -10,7 +10,7 @@ def start
   case input
     when "0"
       Game.new(Player::Computer.new("X"), Player::Computer.new("O")).play
-      puts "That was fun! Would you like to play again?"
+      puts "Game over. Play again?"
       loop_around
     when "1"
       Game.new(Player::Human.new("X"), Player::Computer.new("O")).play
